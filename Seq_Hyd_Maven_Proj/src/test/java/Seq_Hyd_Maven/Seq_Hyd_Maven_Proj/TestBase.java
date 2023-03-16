@@ -23,7 +23,7 @@ public class TestBase {
 	private static XSSFCell ExecutionFlag;	
 	DataFormatter formatter= new DataFormatter();
     protected WebDriverWait wait;
-    //Do the test setup
+    //Do the test setup//
   
     @BeforeMethod
     @Parameters(value={"browser"})
@@ -31,9 +31,9 @@ public class TestBase {
         //Set & Get ThreadLocal Driver with Browser
         TLDriverFactory.setTLDriver(browser);
        // wait = new WebDriverWait(TLDriverFactory.getTLDriver(), 15);       
-       System.setProperty("webdriver.chrome.driver","C:\\Selenium Installation process\\chrome\\s\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Selenium Installation process\\chrome\\s\\chromedriver.exe");
        Thread.sleep(5000);
-       OptionsManager.getChromeOptions();
+      // OptionsManager.getChromeOptions();
    
     }
     
@@ -77,7 +77,7 @@ public class TestBase {
 		
 		XSSFRow row = ExcelWSheet.getRow(0);
 		
-		//Object Data[][]= new Object[rowCount-1][coulcount];
+		////Object Data[][]= new Object[rowCount-1][coulcount];
 		Object Data[]= new Object[datas];
 		int x=0;
 		for (int m =0; m<rowCount-1;m++) {
