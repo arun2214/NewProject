@@ -18,6 +18,7 @@ public class OptionsManager   {
                 .usingAnyFreePort()
                 .build();
         ChromeDriver driver = new ChromeDriver(service, options);*/
+       
     }
 
     //Get Firefox Options
